@@ -56,9 +56,13 @@ const ConversationPage = () => {
                   </FormItem>
                 )}
               />
-              <Button className="col-span-12 lg:col-span-2">submit</Button>
+              <Button className="col-span-12 lg:col-span-2 w-full" disabled={isLoading}>submit</Button>
             </form>
           </Form>
+        </div>
+        
+        <div className="space-y-4 mt-4">
+                Message Content
         </div>
       </div>
     </div>
